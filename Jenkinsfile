@@ -25,7 +25,7 @@ node {
     }
 
     stage('Kubernetes Deploy') {
-                    sh 'cd /var/lib/jenkins/workspace/docker/fonetwish-helm-chart'
-                    sh 'helm upgrade --install fonetwish-app -n fonetwish-test --recreate-pods -f /var/lib/jenkins/workspace/docker/fonetwish-helm-chart/values.yaml --set image.tag=latest /var/lib/jenkins/workspace/docker/fonetwish-helm-chart/.'
+                    sh 'cd /var/lib/jenkins/workspace/Fonetwish-Deployment/fonetwish-helm-chart'
+                    sh 'helm upgrade --install fonetwish-app -n fonetwish-test --recreate-pods -f /var/lib/jenkins/workspace/Fonetwish-Deployment/fonetwish-helm-chart/values.yaml --set image.tag=latest /var/lib/jenkins/workspace/Fonetwish-Deployment/fonetwish-helm-chart/.'
     }
 }
