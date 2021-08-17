@@ -5,7 +5,7 @@ RUN apt-get update && \
  apt-get -y install apache2
 
 # Install apache 
-RUN echo 'Etopia Mobile Fonetwish2' > /var/www/html/index.html
+RUN echo 'Etopia Mobile Fonetwish3' > /var/www/html/index.html
 
 # Configure apache
 RUN echo '. /etc/apache2/envvars' > /root/run_apache.sh && \
